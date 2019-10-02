@@ -43,7 +43,7 @@ function createMenu(arr) {
 
   // APPEND CHILDREN
   menu.appendChild(list);
-  
+
 // Add items to list
 for (let i = 0; i < arr.length; i++) {
   const menuItem = document.createElement("li")
@@ -51,3 +51,18 @@ for (let i = 0; i < arr.length; i++) {
   menuItem.textContent = arr[i]
 }
 console.log(list)
+
+// Add classes
+menu.classList.add("menu");
+menuButton.classList.add("menu-button")
+
+// ADD EVENT LISTENER
+menuButton.addEventListener("click", e =>{
+  menu.classList.toggle("menu--open")
+});
+
+return menu;
+}
+body = document.querySelector("body")
+body.appendChild(createMenu(menuItems))
+
