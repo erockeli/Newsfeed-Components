@@ -40,3 +40,14 @@ function createMenu(arr) {
   const menu = document.createElement("div");
   const list = document.createElement("ul");
   const menuButton = document.querySelector(".menu-button");
+
+  // APPEND CHILDREN
+  menu.appendChild(list);
+  
+// Add items to list
+for (let i = 0; i < arr.length; i++) {
+  const menuItem = document.createElement("li")
+  list.appendChild(menuItem);
+  menuItem.textContent = arr[i]
+}
+console.log(list)
