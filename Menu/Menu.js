@@ -33,3 +33,10 @@ let menuItems = [
   Step 6: add the menu component to the DOM.
   
 */
+
+
+function createMenu(arr) {
+  // ELEMENTS
+  const menu = document.createElement("div");
+  const list = document.createElement("ul");
+  const menuButton = document.querySelector(".menu-button");
