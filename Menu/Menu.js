@@ -39,4 +39,4 @@ function createMenu(arr) {
   // ELEMENTS
   const menu = document.createElement("div");
   const list = document.createElement("ul");
-  const menuButton = document.querySelector(".menu-button");
+  const menuButton = document.querySelector(".menu-button") ;
